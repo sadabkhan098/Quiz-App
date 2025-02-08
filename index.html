@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz App</title>
+</head>
+<body>
+    
+    <!-- First div Box is Start Guidline notes -->
+    <div class="boxContain">
+        <p>
+            <span style="font-size: larger; color: black;">1.</span> You are going to get these 10 questions:
+            <br>
+            <span style="font-size: larger; color: black;">2.</span>15 seconds to be given for each question:
+            <br>
+            <span style="font-size: larger; color: black;">3.</span> Your score is visible after completing all the questions.
+            <br>
+            <span style="font-size: larger; color: black;">4.</span> You can try more to increase your score
+        </p>
+        <button class="startBtn">Start Quiz</button>
+    </div>
+
+    <!-- Second Box is all item i here -->
+
+    <div class="container" >
+        <div class="quizApp"> 
+            <h1>Quiz App</h1>
+        </div>
+        <div class="paragrafDiv">
+            <p class="paragraf">question</p>
+        </div>
+
+        <div class="listItem">
+            <ul>
+                <li>
+                    <input type="radio" id="option_a"  name="cheched">
+                    <label for="option_a" id="text_option_a">A</label>
+                </li>
+                <br>
+                <li>
+                    <input type="radio" id="option_b" name="cheched">
+                    <label for="option_b" id="text_option_b">B</label>
+                </li>
+                <br>
+                <li>
+                    <input type="radio" id="option_c" name="cheched">
+                    <label for="option_c" id="text_option_c">C</label>
+                </li>
+                <br>
+                <li>
+                    <input type="radio" id="option_d" name="cheched">
+                    <label for="option_d" id="text_option_d">D</label>
+                </li>
+            </ul>
+        </div>
+        <div class="twoItem">
+            <span id="timeLeft">timeLeft: </span> <span id="timer">o</span>
+            <button id="next">Next</button>
+        </div>
+    </div>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
